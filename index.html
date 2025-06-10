@@ -10,30 +10,33 @@
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       font-family: 'Vazirmatn', sans-serif;
       background: linear-gradient(135deg, #f2f2f2, #e0e0e0);
+    }
+
+    body {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      direction: rtl;
+      padding: 20px;
     }
 
     a.box-link {
       text-decoration: none;
       color: inherit;
+      width: 100%;
+      max-width: 400px;
     }
 
     .box {
       background: white;
       border: 2px solid #ff9800;
       border-radius: 16px;
-      padding: 24px 32px;
-      max-width: 400px;
-      width: 90%;
+      padding: 24px 28px;
       text-align: right;
       box-shadow: 0 12px 20px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -55,6 +58,14 @@
       font-size: 16px;
       color: #333;
       line-height: 1.8;
+      margin: 0;
+    }
+
+    @media (max-width: 480px) {
+      .box {
+        padding: 20px;
+        font-size: 15px;
+      }
     }
   </style>
 </head>
@@ -65,7 +76,6 @@
     <h2>اطلاعیه مهم</h2>
     <p>
       درگاه پرداخت سایت تا اطلاع ثانوی قطع می‌باشد.
-      <br>
       جهت خرید اکانت، لطفاً روی این باکس کلیک کرده و به پشتیبانی متصل شوید.
     </p>
   </div>
